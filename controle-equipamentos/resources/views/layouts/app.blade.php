@@ -15,6 +15,8 @@
                 <li class="nav-item"><a class="nav-link {{ request()->routeIs('dashboard') ? 'active' : '' }}" href="{{ route('dashboard') }}">📊 Dashboard</a></li>
                 <li class="nav-item"><a class="nav-link {{ request()->routeIs('equipamentos.*') ? 'active' : '' }}" href="{{ route('equipamentos.index') }}">💻 Equipamentos</a></li>
                 <li class="nav-item"><a class="nav-link {{ request()->routeIs('manutencoes.*') ? 'active' : '' }}" href="{{ route('manutencoes.index') }}">🔧 Manutenções</a></li>
+                <li class="nav-item"><a class="nav-link {{ request()->routeIs('agendamentos.*') ? 'active' : '' }}" href="{{ route('agendamentos.index') }}">📅 Agendamentos</a></li>
+                <li class="nav-item"><a class="nav-link {{ request()->routeIs('emprestimos.*') ? 'active' : '' }}" href="{{ route('emprestimos.index') }}">🤝 Empréstimos</a></li>
             </ul>
             <hr class="text-secondary">
             <div class="mt-3">

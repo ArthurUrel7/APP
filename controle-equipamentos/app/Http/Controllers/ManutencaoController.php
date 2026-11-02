@@ -38,4 +38,10 @@ class ManutencaoController extends Controller
 
         return redirect()->route('manutencoes.index')->with('success', '✅ Manutenção registrada!');
     }
+
+        public function destroy(Manutencao $manutencao)
+    {
+        $manutencao->delete();
+        return redirect()->route('manutencoes.index')->with('success', '🗑️ Manutenção excluída!');
+    }
 }
